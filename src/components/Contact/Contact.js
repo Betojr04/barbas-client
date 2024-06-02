@@ -25,7 +25,7 @@ export const Contact = () => {
     event.preventDefault();
     try {
       const response = await fetch(
-        "https://barber-contact-form-ff33746845b9.herokuapp.com/send-message",
+        "https://barbas-server-0884077560fd.herokuapp.com/api/contact",
         {
           method: "POST",
           headers: {
