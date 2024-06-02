@@ -1,0 +1,55 @@
+.barbers-section {
+    position: relative;
+    background: url("../../assets/barbers.jpeg");
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    /* Adjust to position the button */
+}
+
+.barbers-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity for the overlay */
+    z-index: 1;
+}
+
+.barbers-section button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    /* Ensures the button is above the overlay */
+}
+
+.barbers-section button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    /* Slight background change on hover */
+}
+
+/* Styles for larger screens */
+@media (min-width: 769px) {
+    .barbers-section {
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .barbers-section button {
+        position: relative;
+        bottom: 20px;
+        /* Adjust to position the button as desired on larger screens */
+    }
+}
