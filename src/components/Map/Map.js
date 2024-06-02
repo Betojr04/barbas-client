@@ -20,7 +20,7 @@ export const Map = () => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/streets-v11",
-      center: [-111.7875426, 33.3884383], // Your coordinates
+      center: [-111.7875426, 33.3884383],
       zoom: 12
     });
 
@@ -31,7 +31,7 @@ export const Map = () => {
       console.log("Map has loaded successfully.");
     });
 
-    new mapboxgl.Marker().setLngLat([-111.7875426, 33.3884383]).addTo(map); // Your coordinates
+    new mapboxgl.Marker().setLngLat([-111.7875426, 33.3884383]).addTo(map);
 
     return () => map.remove();
   }, []);
