@@ -42,14 +42,13 @@
 /* Styles for larger screens */
 @media (min-width: 769px) {
     .barbers-section {
-        justify-content: flex-end;
-        align-items: center;
-        padding-bottom: 0;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
     }
 
     .barbers-section button {
         position: relative;
-        bottom: 20px;
-        /* Adjust to position the button as desired on larger screens */
+        bottom: 0;
     }
 }

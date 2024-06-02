@@ -38,14 +38,13 @@
 /* Styles for larger screens */
 @media (min-width: 769px) {
     .gallery-section {
-        justify-content: flex-end;
-        align-items: center;
-        padding-bottom: 0;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
     }
 
     .gallery-section button {
         position: relative;
-        bottom: 20px;
-
+        bottom: 0;
     }
 }

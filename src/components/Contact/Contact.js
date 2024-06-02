@@ -5,6 +5,7 @@ import {
   faMapMarkerAlt,
   faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Contact.css";
 
 export const Contact = () => {
@@ -58,15 +59,44 @@ export const Contact = () => {
       <div className="contact-info">
         <div className="info-item">
           <FontAwesomeIcon icon={faPhone} />
-          <span>+123 456 7890</span>
+          <a href="tel:+1234567890" className="phone-link">
+            (480) 633-0920
+          </a>
         </div>
         <div className="info-item">
           <FontAwesomeIcon icon={faMapMarkerAlt} />
-          <span>123 Barber Street, Mesa, United States</span>
+          <a
+            href="geo:33.3884383,-111.7875426?q=123 Barber Street, Mesa, United States"
+            className="address-link"
+          >
+            1555 S Gilbert Rd #106, Mesa, AZ 85204
+          </a>
         </div>
         <div className="info-item">
           <FontAwesomeIcon icon={faEnvelope} />
           <span>inquiry@barbas.com</span>
+        </div>
+        <div className="info-item">
+          <FontAwesomeIcon icon={faFacebook} />
+          <a
+            href="https://www.facebook.com/barbasbarbershopaz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            Facebook
+          </a>
+        </div>
+        <div className="info-item">
+          <FontAwesomeIcon icon={faInstagram} />
+          <a
+            href="https://www.instagram.com/barbasaz/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            Instagram
+          </a>
         </div>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>

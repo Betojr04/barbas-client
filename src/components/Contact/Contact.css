@@ -21,6 +21,19 @@
     color: #333;
 }
 
+.phone-link,
+.address-link,
+.social-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.phone-link:hover,
+.address-link:hover,
+.social-link:hover {
+    text-decoration: underline;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -88,7 +101,6 @@
 .modal-content button:hover {
     background: #0056b3;
 }
-
 
 @media (min-width: 768px) {
 
